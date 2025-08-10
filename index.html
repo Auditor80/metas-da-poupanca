@@ -1,0 +1,49 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Metas de Poupança</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <img src="icon.png" alt="Ícone de cofre" class="icon">
+        <h1>Calculadora de Metas de Poupança</h1>
+        <p class="subtitle">Planeje seu futuro financeiro hoje mesmo!</p>
+        
+        <div class="form">
+            <div class="input-group">
+                <label for="goalAmount">Qual o valor total da sua meta?</label>
+                <div class="input-wrapper">
+                    <span>R$</span>
+                    <input type="number" id="goalAmount" placeholder="10.000">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="timePeriod">Em quantos meses você quer atingir?</label>
+                <div class="input-wrapper">
+                    <input type="number" id="timePeriod" placeholder="12">
+                </div>
+            </div>
+            <button id="calculateBtn">Calcular</button>
+        </div>
+        
+        <div id="result" class="result-container" style="display: none;">
+            <!-- O resultado será exibido aqui -->
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "canvas-confetti": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.module.mjs"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
